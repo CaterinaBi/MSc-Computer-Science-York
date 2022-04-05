@@ -1,0 +1,22 @@
+We were required to develop a Java program with a graphical user interface (GUI) to render 2D objects based on user input, visualise some transitions between states and demonstrate how we preserved states between transitions (for example, going from shape 1 to shape 2 should not leave elements of shape 1 in shape 2). We had to use Java 11 and JavaFX to implement the logic and GUI components.
+
+The program had to have the following functionality:
+
+## Component 1
+An interactive component which can accept user input, where assuming the input is valid, a shape is displayed on the main screen. It was assumed that the program would eventually support a large variety of shapes. The program had to accept the following input: an integer between 4 and 8 inclusive. Depending on the input, the program had to generate a shape with the number of sides corresponding to the input value. For example, an input of 4 had to generate a shape with four sides.
+
+1.1.	We needed to ensure that the user input is validated, and feedback is given when invalid input is entered. 
+1.2.	The program should only allow the user to enter one valid input at a time. 
+1.3.	The main screen should only display one active shape at a time.
+1.4.	The colour of the active shape should be yellow if the number of sides is even, and green if the number of sides is odd.
+
+## Component 2
+An interactive component which must accept user input, where assuming the input is valid, the currently displayed shape will be manipulated depending on the validated input. The program had to accept the following inputs: decrease the number of sides of the current shape by 1, increase the number of sides of the current shape by 1. 
+
+2.1.	We needed to ensure that the user input is validated, and feedback is given when invalid input is entered. 
+2.2.	The program should only allow the user to enter one valid input at a time.
+2.3.	The active shape should always have at minimum, 4 sides, and at maximum, 8 sides in total. 
+2.4.	The colour of the active shape should be yellow if the number of sides is even, and green if the number of sides is odd.
+2.5.	The currently displayed shape should only be filled with one colour at a time.
+
+Any potential error states should not crash the program or generate generic error messages. The program had to clearly indicate to the user that an error has occurred, with specific information on why the error occurred and what valid action(s) are available.
